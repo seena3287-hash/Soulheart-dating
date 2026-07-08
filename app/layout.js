@@ -23,11 +23,18 @@ export const viewport = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className={`${inter.variable} ${playfair.variable}`}>
-     <body className="font-sans antialiased bg-background text-foreground min-h-screen">
+<body className="font-sans antialiased bg-background text-foreground min-h-screen">
   {children}
 
+  {/* Popunder */}
   <Script
     src="https://pl30262212.effectivecpmnetwork.com/f2/9c/ce/f29cce01fc37241b8e00c6c8e40ca348.js"
+    strategy="afterInteractive"
+  />
+
+  {/* Social Bar */}
+  <Script
+    src="https://pl30262213.effectivecpmnetwork.com/f1/1c/66/f11c66fefd80b611ccbc8ea467e13c71.js"
     strategy="afterInteractive"
   />
 </body>
