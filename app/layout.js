@@ -1,5 +1,6 @@
 import './globals.css';
 import { Inter, Playfair_Display } from 'next/font/google';
+import Script from 'next/script';
 
 const inter = Inter({ subsets: ['latin'], variable: '--font-inter', display: 'swap' });
 const playfair = Playfair_Display({ subsets: ['latin'], variable: '--font-playfair', display: 'swap' });
@@ -22,9 +23,14 @@ export const viewport = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className={`${inter.variable} ${playfair.variable}`}>
-      <body className="font-sans antialiased bg-background text-foreground min-h-screen">
-        {children}
-      </body>
+     <body className="font-sans antialiased bg-background text-foreground min-h-screen">
+  {children}
+
+  <Script
+    src="https://pl30262212.effectivecpmnetwork.com/f2/9c/ce/f29cce01fc37241b8e00c6c8e40ca348.js"
+    strategy="afterInteractive"
+  />
+</body>
     </html>
   );
 }
