@@ -37,6 +37,10 @@ export default function RootLayout({ children }) {
     src="https://pl30262213.effectivecpmnetwork.com/f1/1c/66/f11c66fefd80b611ccbc8ea467e13c71.js"
     strategy="afterInteractive"
   />
+  <Script
+  src="https://pl30262214.effectivecpmnetwork.com/e2e6ca2c49c9d7a513f0ccb2aaac7fef/invoke.js"
+  strategy="afterInteractive"
+/>
 </body>
     </html>
   );
